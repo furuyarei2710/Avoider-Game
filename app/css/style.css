@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryColor1: #150050;
+    --primaryColor2: #3F0071;
+
+    --navyColor1: #242F9B;
+    --navyColor2: #646FD4;
+    --navyColor3: #9BA3EB;
+    --navyColor4: #fbfbfb;
+
+    --primaryColor3: #23120B;
+    --primaryColor4: #21209C;
+    --primaryColor5: #FDB827;
+    --primaryColor6: #F1F1F1;
+    
+    --redColor1: #c6132b;
+    --redColor2: #FF1818;
+    --redColor3: #F95959;
+    --redColor4: #F94C66;
+
+    --yellowColor1: #ffb515;
+    --yellowColor2: #FFCD38;
+    --yellowColor3: #FFD124;
+    --yellowColor4: #F6830F;
+    --yellowColor5: #f7a817;
+
+    --comboColor1: #051367;
+    --comboColor2: #F24C4C;
+    --comboColor3: #FFC93C;
+    --comboColor4: #44d3c5;
+
+    --greenColor1: #00dbcd;
+    --greenColor2: #53BF9D;
+    --greenColor3: #A0D995;
+    --greenColor4: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+
+    --purpleColor1: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+
+    --blurColor1: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+
+    --blackColor: #000;
+    --whiteColor: #fff;
+
+    --poppinsFont: "Poppins", sans-serif;
+    --azonixFont: "Azonix", sans-serif;
+}
+
+body {
+    background-image: var(--blurColor1);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header {
+    padding-bottom: 16px;
+    color: var(--blackColor);
+    font-family: var(--poppinsFont);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    top: 25px;
+}
+.score{
+    color: var(--redColor1);
+}
+
+.grid {
+    display: inline-grid;
+    grid-template-columns: repeat(9, 65px);
+    padding: 20px;
+    gap: 5px;
+    border-radius: 50px;
+    background: var(--primaryColor1);
+    position: relative;
+    left: 26%;
+    top: 48px;
+}
+
+.cell {
+    height: 60px;
+}
+
+.enemy,
+.player {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.enemy {
+    background-image: var(--purpleColor1);
+}
+
+.player {
+    background-image: var(--greenColor4);
+}
